@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0%;
+}
+.welcome_p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f8fa;
+  padding: 0% 10%;
+}
+.wel_note {
+  font-size: 34px;
+  color: #4f618e;
+  text-align: center;
+}
+.wel_btn {
+  width: 150px;
+  height: 50px;
+  background-image: linear-gradient(to right, #56627f, #ff9b0d);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+}
+

@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0%;
+}
+.list_page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+  width: 100%;
+}
+.btndiv{
+  text-align: center;
+}
+.contain_list {
+  flex: 100%;
+  font-size: 14px;
+  height: auto;
+  padding: 2% 7%;
+}
+table {
+  width: 100%;
+  text-align: center;
+}
+th,td{
+  border: 1px solid black;
+}
+.btn_list{
+  width: 140px;
+  height: 30px;
+  font-size: 14px;
+  background-color: #3c8dbc;
+  border-color: #fff;
+  color: white;
+  border-radius: 6px;
+  &:hover{
+    transform: scale(1.1);
+  }
+}
