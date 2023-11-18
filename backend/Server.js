@@ -9,7 +9,14 @@ connectDB()
 dotenv.config()
 
 app.use(express.json());
-app.use(cors())
+app.use(cors(
+  {
+    origin:["salary-slip-generator.vercel.app
+"],
+    methods:['GET','POST'],
+    credentials: true
+}
+))
 app.use("/",Router)
 
 
