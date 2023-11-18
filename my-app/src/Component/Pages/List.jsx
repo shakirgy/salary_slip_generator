@@ -9,7 +9,7 @@ function List() {
   const navigate = useNavigate();
 
   const handleDelete = (_id) => {
-    axios.delete(`salary-slip-generator.vercel.app/${_id}`)
+    axios.delete(`http://salary-slip-generator.vercel.app/${_id}`)
     .then((res)=>{
       setEmployee(employee.filter((del)=> del._id !== _id
       ))
@@ -23,7 +23,7 @@ function List() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/viewEmployee")
+      .get("http://salary-slip-generator.vercel.app/viewEmployee")
       .then((val) => setEmployee(val.data));
     console.log("employee list imported");
   }, []);
