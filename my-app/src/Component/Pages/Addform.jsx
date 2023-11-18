@@ -44,7 +44,7 @@ function Addform() {
         },
       };
       const data = await axios.post(
-        `http://localhost:4000/create`,
+        `salary-slip-generator.vercel.app/create`,
         empdetails,
         config
       );
