@@ -11,8 +11,7 @@ dotenv.config()
 app.use(express.json());
 app.use(cors(
   {
-    origin:["salary-slip-generator.vercel.app
-"],
+    origin:["http://salary-slip-generator.vercel.app"],
     methods:['GET','POST'],
     credentials: true
 }
