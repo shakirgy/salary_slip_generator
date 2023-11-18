@@ -16,8 +16,10 @@ app.use(cors(
     credentials: true
 }
 ))
-app.use("/",Router)
+app.use("/",Router,(req,res)=>{
+  res.json("hello")
+})
 
 
-const port=process.env.port || 4000
+const port=process.env.port || 3000
 app.listen(port,()=>console.log(`server is running ${port}`));
