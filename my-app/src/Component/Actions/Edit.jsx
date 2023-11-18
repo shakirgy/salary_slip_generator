@@ -26,7 +26,7 @@ function Edit() {
     const getEmployeeDtls = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4000/getemployee/${_id}`
+          `salary-slip-generator.vercel.app/${_id}`
         );
         const initialDetails = response.data;
         setGetdetails(response.data);
@@ -92,7 +92,7 @@ function Edit() {
     e.preventDefault();
     try {
       const data = await axios.put(
-        `http://localhost:4000/edit/${_id}`,
+        `salary-slip-generator.vercel.app/${_id}`,
         empdetails
       );
       console.log(empdetails);
