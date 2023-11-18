@@ -9,7 +9,7 @@ function List() {
   const navigate = useNavigate();
 
   const handleDelete = (_id) => {
-    axios.delete(`http://localhost:4000/delete/${_id}`)
+    axios.delete(`salary-slip-generator.vercel.app/${_id}`)
     .then((res)=>{
       setEmployee(employee.filter((del)=> del._id !== _id
       ))
