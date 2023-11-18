@@ -13,7 +13,7 @@ function View() {
     const getEmployeeDtls = async () => {
       try {
         const response = await axios.get(
-          `salary-slip-generator.vercel.app/${_id}`
+          `http://salary-slip-generator.vercel.app/${_id}`
         );
         setEmpdetails(response.data);
       } catch (error) {
