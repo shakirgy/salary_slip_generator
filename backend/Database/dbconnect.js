@@ -3,7 +3,7 @@ const mongoose=require('mongoose');
 const connectDB=async()=>{
 
 try{
-    const conn= await mongoose.connect("mongodb+srv://shakkirr:Shadbmongo@cluster0.jf8p5sd.mongodb.net/",
+    const conn= await mongoose.connect("mongodb+srv://shakkirr:Shadbmongo@cluster0.jf8p5sd.mongodb.net/?retryWrites=true&w=majority",
     {
         useNewUrlParser:true,
         useUnifiedTopology:true,
