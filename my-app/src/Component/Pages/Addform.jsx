@@ -44,7 +44,7 @@ function Addform() {
         },
       };
       const data = await axios.post(
-        `http://salary-slip-generator.vercel.app/create`,
+        `https://diploy-salary-slip-generator-backend.onrender.com/create`,
         empdetails,
         config
       );
